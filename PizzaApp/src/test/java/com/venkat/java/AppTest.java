@@ -67,6 +67,16 @@ public class AppTest extends TestCase{
         assertEquals(desired, expected);
     }
 	
+	@Test
+	public void testOperateData() {
+		String inFilePath = "/Users/venkat/Documents/workspace/assignmentApp/PizzaApp/src/test_file.txt";
+		String outFilePath = "/Users/venkat/Documents/workspace/assignmentApp/PizzaApp/src/test_file_ou1.txt ";
+		bl.operateData(inFilePath, outFilePath);
+		
+		File file = new File(outFilePath);
+		assertTrue(file.exists());
+	}
+	
 	/*@Test
 	public void testReadInputFile() throws Exception {
 		File file = folder.newFile("testFile.txt");
@@ -136,6 +146,7 @@ public class AppTest extends TestCase{
         String[] splited = row.split("\\s+");
         assertEquals("Sat, Sep 23, '17 2:24 PM", splited[1]);
     }*/
-    
+   
+
    
 }

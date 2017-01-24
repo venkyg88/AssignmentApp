@@ -79,7 +79,7 @@ public class BusinessLogic implements BusinessLogicInterface {
      * @param epochTime
      * @return
      */
-    private static String convertToReadableDate(long epochTime) {       
+    public static String convertToReadableDate(long epochTime) {
         Date date = new Date(epochTime * 1000L);
         DateFormat format = new SimpleDateFormat("EEE, MMM d, ''yy h:mm a");
         format.setTimeZone(TimeZone.getTimeZone("Etc/UTC"));

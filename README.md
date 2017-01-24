@@ -1,8 +1,5 @@
 # AssignmentApp
-making all the classes loosely coupled
-
-# PizzaApplication
-Program which reads pizza type and time it was ordered, sorts it lexicographically and converts the Epoch time to human readable date/time and writes to another file
+Program which reads pizza type and time it was ordered, sorts it lexicographically and converts the Epoch time to human readable date/time and writes to another file.
 
 ##Completed Tasks:
 - Mavenized the project
